@@ -18,7 +18,7 @@ db.on('connected',()=>{
 //mongo Schema
 let userschema=new schema({email:String,username:String})
 let User=mongoose.model('fbusers' , userschema)
-let abdu=new User({email:"abdurahimant7@gmail.com",username: "Ata Rahman" })
+
 abdu.save()
 var app = express();
 var PORT = process.env.PORT ||3014;
